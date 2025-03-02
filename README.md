@@ -5,8 +5,8 @@ This repository contains a simple python code designed to efficiently manage mul
 
 **Features**
 
-Prevents multiple bots from responding to the same message.  
-Retains conversation memory within threads.  
+* Prevents multiple bots from responding to the same message.  
+* Retains conversation memory within threads.  
 Implements a loader message, which gets deleted once the actual response is ready.  
 Uses Slack's event-based system to process messages efficiently.   
 Includes a file upload API, where files downloaded from Slack are sent to the bot's API for further processing and responses based on the uploaded file.
