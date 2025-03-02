@@ -1,5 +1,5 @@
 # Managing-Multiple-Custom-Slack-Bots-in-the-Same-Channel
-*Overview*
+**Overview**
 
 This repository contains a custom Slack app designed to efficiently manage multiple bots within the same Slack channel. The app ensures that only the intended bot responds while maintaining thread memory and simulating a loader message to enhance user experience.
 
