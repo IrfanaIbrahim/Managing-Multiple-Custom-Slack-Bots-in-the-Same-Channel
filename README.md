@@ -25,4 +25,4 @@ This repository provides the core logic to manage multiple Slack bots efficientl
 
 **More Details**
 
-Details on how this bot is created, subscribed events, bot scopes, and setup instructions can be found in my Medium post: [Link to Medium Post] (Coming Soon)
+Details on how this bot is created, subscribed events, bot scopes, and setup instructions can be found in my Medium post: [https://medium.com/@irfanaibrahim03phi/managing-multiple-slack-bots-in-the-same-channel-challenges-and-solutions-8330ee46da76] 
