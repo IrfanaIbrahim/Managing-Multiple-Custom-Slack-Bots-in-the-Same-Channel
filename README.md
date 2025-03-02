@@ -7,17 +7,16 @@ This repository contains a simple python code designed to efficiently manage mul
 
 * Prevents multiple bots from responding to the same message.  
 * Retains conversation memory within threads.  
-Implements a loader message, which gets deleted once the actual response is ready.  
-Uses Slack's event-based system to process messages efficiently.   
-Includes a file upload API, where files downloaded from Slack are sent to the bot's API for further processing and responses based on the uploaded file.
+* Implements a loader message, which gets deleted once the actual response is ready.  
+* Uses Slack's event-based system to process messages efficiently.   
+* Includes a file upload API, where files downloaded from Slack are sent to the bot's API for further processing and responses based on the uploaded file.
 
 **Why Managing Multiple Bots is Challenging?**
 
-There are no issues in direct messages (DMs), but when multiple Slack bots are present in the same channel and are subscribed to the same event (e.g., message.channels), all bots receive the event and attempt to respond. This leads to:
-
-Multiple bots replying to the same message, creating confusion.  
-No built-in prioritization to determine which bot should handle the request.  
-Difficulty in maintaining thread memory for contextual responses.
+There are no issues in direct messages (DMs), but when multiple Slack bots are present in the same channel and are subscribed to the same event (e.g., message.channels), all bots receive the event and attempt to respond. This leads to:  
+* Multiple bots replying to the same message, creating confusion.  
+* No built-in prioritization to determine which bot should handle the request.  
+* Difficulty in maintaining thread memory for contextual responses.
 
 **Usage as Logic**
 
