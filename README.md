@@ -5,51 +5,25 @@ This repository contains a simple python code designed to efficiently manage mul
 
 **Features**
 
-Prevents multiple bots from responding to the same message.
-
-Retains conversation memory within threads.
-
-Implements a loader message, which gets deleted once the actual response is ready.
-
-Uses Slack's event-based system to process messages efficiently.
+Prevents multiple bots from responding to the same message.  
+Retains conversation memory within threads.  
+Implements a loader message, which gets deleted once the actual response is ready.  
+Uses Slack's event-based system to process messages efficiently.   
+Includes a file upload API, where files downloaded from Slack are sent to the bot's API for further processing and responses based on the uploaded file.
 
 **Why Managing Multiple Bots is Challenging?**
 
 There are no issues in direct messages (DMs), but when multiple Slack bots are present in the same channel and are subscribed to the same event (e.g., message.channels), all bots receive the event and attempt to respond. This leads to:
 
-Multiple bots replying to the same message, creating confusion.
-
-No built-in prioritization to determine which bot should handle the request.
-
+Multiple bots replying to the same message, creating confusion.  
+No built-in prioritization to determine which bot should handle the request.  
 Difficulty in maintaining thread memory for contextual responses.
 
-**Installation & Setup**
+**Usage as Logic**
 
-Clone the repository:
+This repository provides the core logic to manage multiple Slack bots efficiently. However, the entire implementation may vary based on each bot's specific functionality. Users can adapt this logic to their own requirements, including handling different bot responses and workflows.
 
-git clone <repository-url>
-cd <repository-folder>
-
-Install dependencies:
-
-pip install -r requirements.txt
-
-Set up your Slack app and get your bot tokens.
-
-Configure environment variables as required.
-
-Run the server:
-
-python main.py
-
-Usage
-
-Deploy the app and subscribe it to Slack events.
-
-Mention the bot in a channel or thread to trigger a response.
-
-Ensure only one bot is mentioned per message to avoid conflicts.
 
 **More Details**
 
-For a detailed explanation of this implementation, check out my Medium post: [Link to Medium Post] (Coming Soon)
+Details on how this bot is created, subscribed events, bot scopes, and setup instructions can be found in my Medium post: [Link to Medium Post] (Coming Soon)
